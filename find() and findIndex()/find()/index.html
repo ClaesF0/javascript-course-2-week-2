@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>find()</title>
+</head>
+<body>
+    <code>
+        const temperatures = [109.2, 115.2, 119.9, 120.8, 150.0, 175, 182];
+
+        // const foundTemperature = temperatures.find((highTemperature) => {
+        //   // Return true if you find the element you want
+        //   // Return false if you haven't found the element you want
+        //   if(highTemperature>120){
+        //     return true;
+        //   }
+        // });
+        // console.log("highTemperature: ", foundTemperature);
+    </code>
+    <hr>
+    <code>   
+        //with refactoring
+        const foundTemperature = temperatures.find((temperature) => temperature > 120);
+        console.log("highTemperature: ", foundTemperature);
+        
+        const users = [
+          {
+            name: "hesham",
+            age: 30
+          },
+          {
+            name: "uzo",
+            age: 30
+          },
+          {
+            name: "mats",
+            age: 30
+          }
+        ];
+        
+        console.log(users);
+        console.log(users[1]);
+        console.log(users[1].name); 
+    </code>
+</body>
+</html>
